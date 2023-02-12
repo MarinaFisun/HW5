@@ -8,6 +8,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1() {
         System.out.println("Task 1");
@@ -69,25 +70,27 @@ public class Main {
     }
     public static void task6() {
         System.out.println("Task 6");
-    int capacity = 102;
-    int seats = 60;
-    int otherPlaces = capacity - seats;
-    int seatsTaken = 60;
-    int otherPlacesTaken = 34;
-    if (seatsTaken < seats) {
-        System.out.println("В вагоне свободно " + (seats - seatsTaken) + " сидячих мест ") ;
+        int capacity = 102;
+        int seats = 60;
+        int otherPlaces = capacity - seats;
+        int seatsTaken = 60;
+        int otherPlacesTaken = 34;
+        if (seatsTaken < seats) {
+            System.out.println("В вагоне свободно " + (seats - seatsTaken) + " сидячих мест ");
+        } else {
+            System.out.println("В вагоне нет сидячих мест");
+        }
+        if (otherPlacesTaken < otherPlaces) {
+            System.out.println("В вагоне свободно " + (otherPlaces - otherPlacesTaken) + " стоячих мест");
+        } else {
+            System.out.println("В вагоне нет стоячих мест");
+        }
+        if (capacity == (seatsTaken + otherPlacesTaken)) {
+            System.out.println("В вагоне нет свободных мест");
+        }
     }
-    if (otherPlacesTaken < otherPlaces) {
-        System.out.println("В вагоне свободно " + (otherPlaces - otherPlacesTaken) + " стоячих мест");
-    }
-    if (seats == seatsTaken) {
-        System.out.println("В вагоне нет сидячих мест");
-    }
-    if (otherPlacesTaken == otherPlaces)  {
-        System.out.println("В вагоне нет стоячих мест");
-    }
-    if (otherPlacesTaken + seatsTaken == capacity) {
-        System.out.println("В вагоне нет свободных мест");
-    }
+    public static void task7() {
+        System.out.println("Task 7");
+
     }
     }
